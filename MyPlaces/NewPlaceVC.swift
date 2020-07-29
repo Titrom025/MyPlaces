@@ -10,7 +10,7 @@ import UIKit
 
 class NewPlaceVC: UITableViewController {
     
-    var currentPlace: Place?
+    var currentPlace: Place!
     
     var imageIsChanged = false
     
@@ -20,15 +20,20 @@ class NewPlaceVC: UITableViewController {
     @IBOutlet weak var placeName: UITextField!
     @IBOutlet weak var placeLocation: UITextField!
     @IBOutlet weak var placeType: UITextField!
+    @IBOutlet weak var ratingControl: RatingControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.tableFooterView = UIView()
+        tableView.tableFooterView = UIView(frame: CGRect(x: 0,
+                                                         y: 0,
+                                                         width: tableView.frame.size.width,
+                                                         height: 1))
         saveBtn.isEnabled = false
         placeName.addTarget(self, action: #selector(textFieldChange), for: .editingChanged)
         
         setupEditScreen()
+        
     }
     
     // MARK: TableViewDelegate
@@ -84,7 +89,7 @@ class NewPlaceVC: UITableViewController {
         let newPlace = Place(name: placeName.text!,
                              location: placeLocation.text,
                              type: placeType.text,
-                             imageData: imageData)
+                             imageData: imageData, rating: Double(ratingControl.rating))
         
         if currentPlace != nil {
             try! realm.write {
@@ -92,6 +97,7 @@ class NewPlaceVC: UITableViewController {
                 currentPlace?.location = newPlace.location
                 currentPlace?.type = newPlace.type
                 currentPlace?.imageData = newPlace.imageData
+                currentPlace?.rating = newPlace.rating
             }
         } else {
             StorageManager.saveObject(newPlace)
@@ -116,8 +122,8 @@ class NewPlaceVC: UITableViewController {
             placeLocation.text = currentPlace?.location
             placeType.text = currentPlace?.type
             placeImage.image = image
-            
             placeImage.contentMode = .scaleAspectFill
+            ratingControl.rating = Int(currentPlace.rating)
         }
     }
     
