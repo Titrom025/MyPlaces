@@ -62,5 +62,7 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>$(PRODUCT_NAME) Photo use</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Using to track location on the map</string>
 </dict>
 </plist>

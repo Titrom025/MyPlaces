@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E09F5D624D12ED300E6B8FB /* RatingInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E09F5D524D12ED300E6B8FB /* RatingInCell.swift */; };
+		2E09F5D824D1478A00E6B8FB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E09F5D724D1478A00E6B8FB /* MapViewController.swift */; };
 		2E52545A24CA8DF50034FC83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E52545924CA8DF50034FC83 /* AppDelegate.swift */; };
 		2E52545C24CA8DF50034FC83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E52545B24CA8DF50034FC83 /* SceneDelegate.swift */; };
 		2E52546124CA8DF50034FC83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E52545F24CA8DF50034FC83 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		2E09F5D524D12ED300E6B8FB /* RatingInCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingInCell.swift; sourceTree = "<group>"; };
+		2E09F5D724D1478A00E6B8FB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2E52545624CA8DF50034FC83 /* MyPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E52545924CA8DF50034FC83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E52545B24CA8DF50034FC83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				2ECD16E624CE85F500B1EE94 /* NewPlaceVC.swift */,
 				2E64569124CEF3D6000868DF /* StorageManager.swift */,
 				2ECD16E224CABA0000B1EE94 /* CustomTableViewCell.swift */,
+				2E09F5D724D1478A00E6B8FB /* MapViewController.swift */,
 				2E64569324D0699A000868DF /* RatingControl.swift */,
 				2E09F5D524D12ED300E6B8FB /* RatingInCell.swift */,
 				2E52545B24CA8DF50034FC83 /* SceneDelegate.swift */,
@@ -227,6 +230,7 @@
 				2E52545A24CA8DF50034FC83 /* AppDelegate.swift in Sources */,
 				2E52546E24CA98BF0034FC83 /* MainVC.swift in Sources */,
 				2ECD16E524CABDB900B1EE94 /* PlaceModel.swift in Sources */,
+				2E09F5D824D1478A00E6B8FB /* MapViewController.swift in Sources */,
 				2E64569224CEF3D6000868DF /* StorageManager.swift in Sources */,
 				2E64569424D0699A000868DF /* RatingControl.swift in Sources */,
 				2ECD16E724CE85F500B1EE94 /* NewPlaceVC.swift in Sources */,
